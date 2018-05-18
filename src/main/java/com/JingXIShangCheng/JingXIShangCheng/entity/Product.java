@@ -9,17 +9,25 @@ public class Product {
 
     @Id
     @GeneratedValue
-    private Integer id;
+    private Long id;
     private String productName;
     private String description;
     private Integer price;
     private Integer amount;
 
-    public Integer getId() {
+    public Product(Long id, String productName, String description, Integer price, Integer amount) {
+        this.id = id;
+        this.productName = productName;
+        this.description = description;
+        this.price = price;
+        this.amount = amount;
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
