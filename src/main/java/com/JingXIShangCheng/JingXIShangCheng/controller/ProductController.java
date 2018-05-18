@@ -23,11 +23,6 @@ public class ProductController {
     public List<Product> getAll(){
         return productRepository.findAll();
     }
-
-    @GetMapping("/{id}")
-    public Product getProductById(@PathVariable("id") Long id){
-        //return productRepository.findById(id);
-        return null;
-    }
+    
 
 }
